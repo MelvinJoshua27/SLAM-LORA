@@ -1,31 +1,51 @@
-# Ultra6 Obstacle Mapping System – VB6 + LoRa
+# SLAM with LoRa Technology
 
-This project demonstrates a **real-time obstacle detection and mapping system** built using **Visual Basic 6 (VB6)**. It receives data from external sensors (e.g., ultrasonic modules) via **LoRa wireless communication** and displays obstacles in an AR-style graphical interface.
+## Short Description
+Prototype project demonstrating simultaneous localization and mapping (SLAM) in a GPS-denied environment using LoRa-based communication. Presents a VB6 interface that visualizes obstacles in real time based on ultrasonic sensor data transmitted via LoRa.
 
-Originally developed as a low-cost SLAM (Simultaneous Localization and Mapping) prototype, this system helps visualize environmental boundaries based on distance measurements.
-
----
-
-## 🧰 Tech Stack
-
-| Layer       | Technology     |
-|-------------|----------------|
-| GUI         | Visual Basic 6 |
-| Data Comm.  | LoRa wireless module |
-| Visualization | Custom-built obstacle display interface |
-| Packaging   | VB6 setup tools (`setup.exe`, `support/`) |
+This lays the groundwork for an advanced version targeting up to 1 km range with <5 % packet loss and a 15 % improvement in mapping accuracy.
 
 ---
 
-## 🔧 Features
-
-- **Real-time obstacle visualization** using data received over serial (LoRa)
-- **Six-direction detection** using ultrasonic sensors (hardware-dependent)
-- **Compact GUI** designed in VB6 with easy setup
-- Displays obstacles in AR-style radial or grid format
-- Lightweight, no internet required
+## Project Features
+- **Real-Time Obstacle Visualization** — Displays surrounding obstacles using an AR-style GUI in VB6  
+- **LoRa Communication** — Receives ultrasonic sensor data wirelessly via LoRa modules  
+- **Six-Direction Detection** — Supports detection in multiple axes, depending on hardware  
+- **Lightweight GUI** — No internet dependency; easily deployable Windows setup
 
 ---
 
-## 📁 Project Structure
+## Tech Stack
+- **Language & UI:** Visual Basic 6 (VB6)  
+- **Communication:** LoRa modules  
+- **Sensors:** Ultrasonic sensor array  
+- **Visualization:** Custom AR-style interface in VB6  
+- **Packaging:** VB6 setup files included
+
+---
+
+## Setup & Usage
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/MelvinJoshua27/SLAM-LORA.git
+    cd SLAM-LORA
+    ```
+2. Locate the `setup.exe` in the `VB6_Application` folder and install the application.
+3. Power on the ultrasonic sensors and LoRa transmitter module.
+4. Launch the installed app to see real-time obstacle mapping.
+
+---
+
+## Results
+- Functional SLAM prototype with multi-direction obstacle mapping  
+- Lightweight and internet-free GUI presented in an AR-like display
+
+---
+
+## Future Enhancements
+- **ESP32-based SLAM** — Revamp entire system using ESP32 for real-time processing  
+- **Extended Range** — Achieve up to **1 km coverage** with **<5 % packet loss**  
+- **Improved Mapping Accuracy** — Target **15 % enhancement** via sensor fusion and code optimization
+
+---
 
